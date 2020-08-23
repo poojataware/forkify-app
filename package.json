@@ -1,0 +1,19 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "forkify project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pooja Taware",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poojataware/forkify-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poojataware/forkify-app/issues"
+  },
+  "homepage": "https://github.com/poojataware/forkify-app#readme"
+}
