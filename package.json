@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/poojataware/forkify-app/issues"
   },
-  "homepage": "https://github.com/poojataware/forkify-app#readme"
+  "homepage": "https://github.com/poojataware/forkify-app#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
