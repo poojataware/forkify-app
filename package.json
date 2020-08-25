@@ -4,7 +4,9 @@
   "description": "forkify project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "author": "Pooja Taware",
   "license": "ISC",
@@ -17,9 +19,21 @@
   },
   "homepage": "https://github.com/poojataware/forkify-app#readme",
   "devDependencies": {
-    "webpack": "^4.44.1"
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "axios": "^0.20.0",
+    "babel-polyfill": "^6.26.0",
+    "install": "^0.13.0",
+    "jquery": "^3.5.1",
+    "npm": "^6.14.8"
   }
 }
