@@ -1,4 +1,5 @@
 import Search from './models/Search';
+import Recipe from './models/Recipe';
 import {elements,renderLoader,clearLoader} from './views/base';
 import * as searchView from './views/searchView';
 /**Global state of the app
@@ -8,6 +9,8 @@ import * as searchView from './views/searchView';
  * Liked recipes
  */
 const state={};
+
+/* SEARCH CONTROLLER */
 
 const controlSearch = async () => {
     //1)Get query from view
@@ -33,6 +36,7 @@ elements.searchForm.addEventListener('submit', e=>{
 });
 
 elements.searchResPages.addEventListener('click', e => {
+    console.log(e.target);
     const btn=e.target.closest('.btn-inline');
     if(btn){
         const goToPage = parseInt(btn.dataset.goto, 10);
@@ -40,3 +44,8 @@ elements.searchResPages.addEventListener('click', e => {
         searchView.renderResults(state.search.result, goToPage);        
     }
 });
+
+/* RECIPE CONTROLLER */
+const r= new Recipe(47746);
+r.getRecipe();
+console.log(r);
